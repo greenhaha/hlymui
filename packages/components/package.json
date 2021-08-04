@@ -1,0 +1,41 @@
+{
+  "name": "@hlym/components",
+  "version": "0.0.1",
+  "description": "组件库",
+  "author": "greenhaha",
+  "homepage": "",
+  "license": "MIT",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenhaha/hlymui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "father-build"
+  },
+  "bugs": {
+    "url": "https://github.com/greenhaha/hlymui/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.9",
+    "father-build": "^1.19.1"
+  }
+}
