@@ -2,9 +2,11 @@ import React from 'react';
 import cx from 'classnames';
 import { useCallback } from 'react';
 
-export type ButtonTypes = 'primary' | 'default';
+export type ButtonTypes = 'default' | 'primary' | 'info' | 'success' | 'warning' | 'error';
+export type ButtonSizes = 'tiny' | 'small' | 'medium' | 'large'
 export interface ButtonProps {
   type?: ButtonTypes;
+  size?: ButtonSizes;
   children: React.ReactNode;
   prefixCls?: string;
   className?: string;
@@ -14,6 +16,7 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = props => {
   const {
     type = 'default',
+    size = 'medium',
     disabled = false,
     children,
     className,
@@ -35,6 +38,7 @@ const Button: React.FC<ButtonProps> = props => {
     <button
       className={cx(prefixCls, {
         [`${prefixCls}-${type}`]: type && !disabled,
+        [`${prefixCls}-${size}`]: size && !disabled,
         [`${prefixCls}-disabled`]: disabled,
         [className]: className,
       })}

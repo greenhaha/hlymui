@@ -2,6 +2,14 @@
 // 样式前缀
 @cz-prefix: cz;
 
+// 样式基础动画
+@bezier: cubic-bezier(0.4, 0, 0.2, 1);
+@bezier-ease-out: cubic-bezier(0, 0, 0.2, 1);
+@ripple-duration: 0.6s;
+@opacity-disabled: 0.5;
+@wave-opacity: 0.6;
+
+
 // -------- Colors -----------
 @primary-color: #1890ff;
 @white: #fff;
@@ -42,7 +50,7 @@
 // ------ border ------
 @border-width-base: 1px;
 @border-style-base: solid;
-@border-radius-base: 2px;
+@border-radius-base: 3px;
 @border-color-base: hsv(0, 0, 85%);
 @border-color-split: hsv(0, 0, 94%); // split border inside a component
 
@@ -73,6 +81,33 @@
 @btn-default-color: @text-color;
 @btn-default-bg: @component-background;
 @btn-default-border: @border-color-base;
+
+@btn-info-bg: @info-color-bg;
+
+@btn-success-bg: @success-color;
+@btn-success-bg-hover: @success-color-hover;
+@btn-success-border-hover: @success-border-hover;
+@btn-success-bg-focus: @success-color-focus;
+@btn-success-border-focus: @success-border-focus;
+@btn-success-bg-pressed: @success-color-pressed;
+@btn-success-border-pressed: @success-border-pressed;
+
+@btn-warning-bg: @warning-color;
+@btn-warning-bg-hover: @warning-color-hover;
+@btn-warning-border-hover: @warning-border-hover;
+@btn-warning-bg-focus: @warning-color-focus;
+@btn-warning-border-focus: @warning-border-focus;
+@btn-warning-bg-pressed: @warning-color-pressed;
+@btn-warning-border-pressed: @warning-border-pressed;
+
+@btn-error-bg: @error-color;
+@btn-error-bg-hover: @error-color-hover;
+@btn-error-border-hover: @error-border-hover;
+@btn-error-bg-focus: @error-color-focus;
+@btn-error-border-focus: @error-border-focus;
+@btn-error-bg-pressed: @error-color-pressed;
+@btn-error-border-pressed: @error-border-pressed;
+
 
 @btn-font-size-lg: @font-size-lg;
 @btn-font-size-sm: @font-size-base;

@@ -1,5 +1,5 @@
 {
-  "name": "hlymUI",
+  "name": "hlymui",
   "version": "0.0.1",
   "scripts": {
     "bootstrap": "yarn clean && lerna bootstrap",

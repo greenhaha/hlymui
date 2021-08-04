@@ -20,6 +20,7 @@ nav:
 
 | 属性     | 说明             | 类型                   | 默认值    |
 | -------- | ---------------- | ---------------------- | --------- |
-| type     | 设置按钮类型     | `primary` \| `default` | `default` |
+| type     | 设置按钮类型     | `default`  \| `primary` \| `info` \|`success` \| `warning` \| `error` | `default` |
+| size  | 设置按钮大小 | `tiny` \| `small` \| `medium` \| `large`        | `medium `        |
 | onClick  | 点击按钮时的回调 | (event) => void        | -         |
 | disabled | 设置按钮禁用     | boolean                | false     |

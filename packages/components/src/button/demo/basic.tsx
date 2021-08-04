@@ -12,13 +12,15 @@ export default () => {
           setStyle();
         }}
       >
-        默认按钮
+        defalut
       </Button>
-      <br />
-      <Button type="primary">高亮按钮</Button>
-      <br />
+      <Button type="info">info</Button>
+      <Button type="primary">primary</Button>
+      <Button type="success">success</Button>
+      <Button type="warning">warning</Button>
+      <Button type="error">error</Button>
       <Button type="primary" disabled>
-        我被禁用
+        disabled
       </Button>
     </>
   );
