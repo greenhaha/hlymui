@@ -1,6 +1,19 @@
 {
   "name": "hlymui",
   "version": "0.0.1",
+  "author": {
+    "name": "greenhaha",
+    "email": "a15114101085@gmail.com"
+  },
+  "files": [
+    "packages/components",
+    "package.json",
+    "README.md"
+  ],
+  "typings": "typings.d.ts",
+  "repository": {
+    "url": "https://github.com/greenhaha/hlymui.git"
+  },
   "scripts": {
     "bootstrap": "yarn clean && lerna bootstrap",
     "clean": "lerna clean -y",
