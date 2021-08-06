@@ -1,5 +1,5 @@
 import React from "react";
-import cx from 'classnames';
+import classnames from 'classnames';
 
 export type DividerTypes = 'horizontal' | 'vertical'
 export type DividerOrientation = 'left' | 'center' | 'right'
@@ -26,17 +26,16 @@ const Divider: React.FC<DividerProps> = props => {
         plain = false,
         children
     } = props
+    const classString = classnames(prefixCls, {
+        [`${prefixCls}-${type}`]: type,
+        [`${prefixCls}-text-${orientation}`]: orientation,
+        [`${prefixCls}-dashed`]: dashed,
+        [`${prefixCls}-plain`]: plain,
+        [className]: className,
+    })
     return (
         <div 
-            className={
-                cx(prefixCls, {
-                    [`${prefixCls}-${type}`]: type,
-                    [`${prefixCls}-text-${orientation}`]: orientation,
-                    [`${prefixCls}-dashed`]: dashed,
-                    [`${prefixCls}-plain`]: plain,
-                    [className]: className,
-                })
-            }
+            className={classString}
             style={style}
         >
             {children&&<span
