@@ -1,5 +1,5 @@
 import React from 'react';
-import cx from 'classnames';
+import classNames from 'classnames';
 import { useCallback } from 'react';
 
 export type ButtonTypes = 'default' | 'primary' | 'info' | 'success' | 'warning' | 'error';
@@ -34,14 +34,16 @@ const Button: React.FC<ButtonProps> = props => {
     [onClick],
   );
 
+  const classString = classNames (prefixCls, {
+    [`${prefixCls}-${type}`]: type && !disabled,
+    [`${prefixCls}-${size}`]: size && !disabled,
+    [`${prefixCls}-disabled`]: disabled,
+    [className]: className,
+  })
+
   return (
     <button
-      className={cx(prefixCls, {
-        [`${prefixCls}-${type}`]: type && !disabled,
-        [`${prefixCls}-${size}`]: size && !disabled,
-        [`${prefixCls}-disabled`]: disabled,
-        [className]: className,
-      })}
+      className = {classString}
       onClick={handleClick}
     >
       {children}
